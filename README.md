@@ -13,7 +13,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/Nathathaii/aimplant-frontend.git
+git clone https://github.com/aimplant-capstone2025/aimplant-frontend.git
 cd aimplant-frontend
 ```
 
