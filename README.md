@@ -59,13 +59,4 @@ npm start
 
 Create file .env.local
 
-### License
-
-This project is licensed under the [MIT License](LICENSE).
-
-### Contact
-
-For inquiries or collaboration, contact [[your-email@example.com](mailto\:your-email@example.com)].
-
-add instruction about create file .env.local to store variable
 
