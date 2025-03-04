@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImplantResult } from '../types';
+import { ImplantResult } from '../app/types';
 
 interface ImplantResultCardProps {
   implant: ImplantResult;

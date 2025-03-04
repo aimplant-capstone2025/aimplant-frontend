@@ -1,4 +1,4 @@
-// File: C:\Users\fahfi\capstone\web\prae\aimplant-frontend\src\app\layout.tsx
+// File: C:\Users\bambam\OneDrive\Documents\Capstone\web\aimplant-frontend\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

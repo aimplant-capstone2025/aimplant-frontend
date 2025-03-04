@@ -5,7 +5,7 @@ export type PatientData = {
   age: string;
   gender: Gender;
   location: ImplantLocation;
-  image: File | null;
+  image: File;
 };
 
 export type ImplantResult = {

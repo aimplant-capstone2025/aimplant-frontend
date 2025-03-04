@@ -25,10 +25,19 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
     location: '',
     image: null,
   });
+
+  // // Data (other options)
+  // const [patientData2, setPatientData2] = useState<PatientData>({
+  //   age: '',
+  //   gender: 'male',
+  //   location: '',
+  //   image: null,
+  // });
   
   // State for image preview
   const [imagePreview, setImagePreview] = useState<string | null>(null);
-  const [image, setImage] = useState<string | null>(null);
+  // // State for image preview (other options)
+  // const [imagePreview2, setImagePreview2] = useState<string | null>(null);
   // State for loading
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -48,6 +57,16 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
     });
     setImagePreview(preview);
   };
+
+  // // Handle image selection (other options)
+  // const handleImageSelected2 = (file: File, preview: string) => {
+  //   setPatientData2({
+  //     ...patientData2,
+  //     image: file,
+  //   });
+  //   setImagePreview2(preview);
+  // };
+
 
   // Handle form submission
   const handleSubmit = async (e: FormEvent) => {
@@ -122,18 +141,19 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
         onImageSelected={handleImageSelected}
         required
       />
-      <UploadImage setImageUrl={setImagePreview} />
+
+      {/* uploadthing (stored) */}
+      {/* <UploadImage setImageUrl={setImagePreview} /> */}
       
-      <h3 className="h3 font-bold">Upload Image (not store)</h3>
+      {/* pcode (no stored) */}
+      {/* <h3 className="h3 font-bold">Upload Image (not store)</h3>
         <UploadImageNoStore  
-        imagePreview={imagePreview}
-        onImageSelected={handleImageSelected}
+        imagePreview={imagePreview2}
+        onImageSelected={handleImageSelected2}
         required />
-         {image && <ProcessImage image={imagePreview} />}
+         {imagePreview2 && <ProcessImage image={imagePreview2} />} */}
 
       
-
-
       <LoadingButton isLoading={isLoading}>
         <>
           Detect
