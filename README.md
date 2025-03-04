@@ -1,5 +1,9 @@
 # AImplant Frontend
 
+
+This frontend is forked and deployed at https://aimplant-frontend.vercel.app/
+
+
 ## Getting Started
 
 This is the frontend repository for **AImplant**, a web application designed to mock our peri-implantitis detection and classification.
