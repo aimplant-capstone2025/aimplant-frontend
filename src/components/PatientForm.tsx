@@ -130,7 +130,7 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
       <FormField
         id="location"
         name="location"
-        label="Implant Location"
+        label="Implant Location (Separate multiple locations with commas, e.g., 13, 31, 36)"
         value={patientData.location}
         onChange={handleFieldChange}
         required
