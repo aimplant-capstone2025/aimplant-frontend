@@ -19,7 +19,7 @@ const ProcessImage: React.FC<ProcessImageProps> = ({ image }) => {
 
     try {
       // Send POST request to backend API
-      const response = await fetch("http://127.0.0.1:8000/predict/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}`, {
         method: "POST",
         body: formData,
       });
