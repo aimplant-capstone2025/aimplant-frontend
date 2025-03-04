@@ -948,6 +948,9 @@ video {
 .text-center {
   text-align: center;
 }
+.\!text-center {
+  text-align: center !important;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1048,6 +1051,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.\!text-purple-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(107 33 168 / var(--tw-text-opacity, 1)) !important;
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

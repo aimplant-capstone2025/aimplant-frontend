@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Button } from "./ui/button";
 
 interface ProcessImageProps {
-  image: string; // This is the image data URL
+  image: string | null; // This is the image data URL
 }
 
 const ProcessImage: React.FC<ProcessImageProps> = ({ image }) => {

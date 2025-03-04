@@ -5,6 +5,9 @@ import FormField from './FormField';
 import ImageUploader from './ImageUploader';
 import LoadingButton from './LoadingButton';
 import { predictBoneLoss } from '@/app/api/mockApi';
+import UploadImageNoStore from './UploadImageNoStore';
+import UploadImage from './UploadImage';
+import ProcessImage from '@/components/ProcessImage';
 
 interface PatientFormProps {
   onResultsReady: (results: {
@@ -25,7 +28,7 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
   
   // State for image preview
   const [imagePreview, setImagePreview] = useState<string | null>(null);
-  
+  const [image, setImage] = useState<string | null>(null);
   // State for loading
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -119,7 +122,18 @@ const PatientForm: React.FC<PatientFormProps> = ({ onResultsReady }) => {
         onImageSelected={handleImageSelected}
         required
       />
+      <UploadImage setImageUrl={setImagePreview} />
       
+      <h3 className="h3 font-bold">Upload Image (not store)</h3>
+        <UploadImageNoStore  
+        imagePreview={imagePreview}
+        onImageSelected={handleImageSelected}
+        required />
+         {image && <ProcessImage image={imagePreview} />}
+
+      
+
+
       <LoadingButton isLoading={isLoading}>
         <>
           Detect
