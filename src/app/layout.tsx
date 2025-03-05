@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <html lang="en">
-        <body className={`${inter.className} max-w-full mx-auto my-8 sm:my-12 md:my-16 p-4 sm:p-6 md:p-8`}>
+        <body className={`${inter.className} h-full w-full`}>
           {children}
         </body>
       </html>
