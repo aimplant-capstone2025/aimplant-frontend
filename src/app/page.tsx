@@ -10,6 +10,7 @@ import { ImplantResult } from '@/app/types';
 import Header from '@/components/Header';
 import PatientForm from '@/components/PatientForm';
 import ResultsPanel from '@/components/ResultsPanel';
+import Sidebar from '@/components/Sidebar'
 
 export default function Home() {
   
@@ -60,6 +61,9 @@ export default function Home() {
   };
 
   return (
+    <div className="flex min-h-screen">
+      <Sidebar />
+    <main className="flex-1 p-8">
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100">
       <div className="container mx-auto px-4 py-8">
         <Header />
@@ -80,6 +84,8 @@ export default function Home() {
           )}
         </div>
       </div>
+    </div>
+    </main>
     </div>
   );
 }
